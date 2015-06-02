@@ -90,14 +90,14 @@ ORPort 443
 
 ## The IP address or full DNS name for incoming connections to your
 ## relay. Leave commented out and Tor will guess.
-Address {$IP_ADDR}
+Address {IP_ADDR}
 
 ## If you have multiple network interfaces, you can specify one for
 ## outgoing traffic to use.
 # OutboundBindAddress 10.0.0.5
 
 ## A handle for your relay, so people don't have to refer to it by key.
-Nickname {$NAME}
+Nickname {NAME}
 
 ## Define these to limit how much relayed traffic you will allow. Your
 ## own traffic is still unthrottled. Note that RelayBandwidthRate must
