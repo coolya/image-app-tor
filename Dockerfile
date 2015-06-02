@@ -5,7 +5,7 @@ MAINTAINER Scaleway <kolja.dummann@logv.ws> (@dumdidum)
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
 
-ADD ./patches/usr/ /usr/
+ADD ./patches/ /
 
 RUN echo "deb http://deb.torproject.org/torproject.org trusty main" > /etc/apt/sources.list.d/tor.list
 RUN echo "deb-src http://deb.torproject.org/torproject.org trusty main" >> /etc/apt/sources.list.d/tor.list
