@@ -1,8 +1,8 @@
 #!/bin/sh
 
-NAME=$(`oc-metadata | grep HOSTNAME | cut -d= -f2`)
-IP=$(`oc-metadata | grep PUBLIC_IP_ADDRESS | cut -d= -f2`)
+NAME=$(oc-metadata | grep HOSTNAME | cut -d= -f2)
+IP=$(oc-metadata | grep PUBLIC_IP_ADDRESS | cut -d= -f2)
 PATH_TO_TEMPLATE="/etc/tor/torrc.template"
 TORRC_PATH="/etc/tor/torrc"
 
-sed 's/{IP_ADDR}/$IP/g;s/{NAME}/$NAME/g' "$PATH_TO_TEMPLATE" > "$TORRC_PATH"
+sed "s/{IP_ADDR}/$IP/g;s/{NAME}/$NAME/g" "$PATH_TO_TEMPLATE" > "$TORRC_PATH"
