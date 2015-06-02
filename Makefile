@@ -1,10 +1,10 @@
 DOCKER_NAMESPACE =	dumdidum/
-NAME =			scw-app-kolab
+NAME =			scw-app-tor
 VERSION =		0.0.1
 VERSION_ALIASES =	0.0.1 latest
-TITLE =			Kolab Image
+TITLE =			Tor Image
 DESCRIPTION =		An image with Kolab installed
-SOURCE_URL =		https://github.com/coolya/image-app-kolab
+SOURCE_URL =		https://github.com/coolya/image-app-tor
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
