@@ -7,8 +7,8 @@ RUN /usr/local/sbin/builder-enter
 
 ADD ./patches/ /
 
-RUN echo "deb http://deb.torproject.org/torproject.org trusty main" > /etc/apt/sources.list.d/tor.list
-RUN echo "deb-src http://deb.torproject.org/torproject.org trusty main" >> /etc/apt/sources.list.d/tor.list
+RUN echo "deb http://deb.torproject.org/torproject.org jessie main" > /etc/apt/sources.list.d/tor.list
+RUN echo "deb-src http://deb.torproject.org/torproject.org jessie main" >> /etc/apt/sources.list.d/tor.list
 
 
 RUN  gpg --keyserver keys.gnupg.net --recv 886DDD89 && \
