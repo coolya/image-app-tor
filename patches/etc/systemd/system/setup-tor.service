@@ -1,0 +1,10 @@
+[Unit]
+Description=Setup tor with ip and name
+Before=tor.service
+
+[Service]
+ExecStart=/usr/local/sbin/setup-tor
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

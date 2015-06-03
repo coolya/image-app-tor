@@ -20,6 +20,7 @@ RUN apt-get -q update                   \
  RUN  apt-get --force-yes install -y -q   \
 	tor
 
+RUN systemctl enable setup-tor.service
 # Clean rootfs from image-builder
 
 RUN /usr/local/sbin/builder-leave
