@@ -1,9 +1,9 @@
-DOCKER_NAMESPACE =	dumdidum/
+DOCKER_NAMESPACE =	dumdidum/image-app-tor
 NAME =			scw-app-tor
-VERSION =		0.0.1
-VERSION_ALIASES =	0.0.1 latest
+VERSION =		0.0.2
+VERSION_ALIASES =	0.0.2 latest
 TITLE =			Tor Image
-DESCRIPTION =		An image with Kolab installed
+DESCRIPTION =		A none exit Tor relay
 SOURCE_URL =		https://github.com/coolya/image-app-tor
 
 
