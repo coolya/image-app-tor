@@ -1,4 +1,4 @@
-# Official Torrents image on Scaleway
+#  Tor Relay image on Scaleway
 
 
 Scripts to build Tor relay image on Scaleway
