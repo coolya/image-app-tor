@@ -1,6 +1,42 @@
-# image-app-tor
-tor none exit relay on scaleway
+# Official Torrents image on Scaleway
 
-It is based on jessie debian. To build you will need to build the debian jessie base image on your own.
-It's currently not available via docker hub. To do so clone this [repo](https://github.com/scaleway/image-debian), 
-go to the jessie folder and run `make shell`. Once finised exit the shell back to the root, change to this repo and run `make install`.
+
+Scripts to build Tor relay image on Scaleway
+
+This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on  [Debian Jessie](https://github.com/scaleway/image-debian) image. This is not offically available yet. In order to use it you have to build it manually before build this image.
+
+
+---
+
+**This image is meant to be used on a C1 server.**
+
+We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
+
+[More info](https://github.com/scaleway/image-tools)
+
+
+---
+
+## Changelog
+
+
+### 0.0.3 (2015-06-03)
+
+This initial version contains:
+
+* config items (relay name and ip adress) read from scaleway metadata
+* start tor as a relay on boot
+
+
+---
+
+## Install
+
+Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
+
+    $ make install
+
+Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
+
+
+---
