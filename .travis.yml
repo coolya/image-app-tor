@@ -2,3 +2,4 @@ language: bash
 
 script:
     - make travis
+    
