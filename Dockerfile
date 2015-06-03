@@ -1,5 +1,5 @@
 ## -*- docker-image-name: "armbuild/scw-app-kolab:latest" -*-
-FROM armbuild/scw-distrib-ubuntu:trusty
+FROM armbuild/scw-distrib-debian:jessie
 MAINTAINER Scaleway <kolja.dummann@logv.ws> (@dumdidum)
 
 # Prepare rootfs for image-builder
