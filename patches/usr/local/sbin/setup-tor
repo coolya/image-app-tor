@@ -4,5 +4,7 @@ NAME=$(oc-metadata | grep HOSTNAME | cut -d= -f2)
 IP=$(oc-metadata | grep PUBLIC_IP_ADDRESS | cut -d= -f2)
 PATH_TO_TEMPLATE="/etc/tor/torrc.template"
 TORRC_PATH="/etc/tor/torrc"
+NAME=$(echo $NAME | sed -e "s/[^a-zA-Z0-9]//g")
+NAME=$(echo $NAME | cut -c 1-19)
 
 sed "s/{IP_ADDR}/$IP/g;s/{NAME}/$NAME/g" "$PATH_TO_TEMPLATE" > "$TORRC_PATH"
