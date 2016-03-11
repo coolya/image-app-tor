@@ -1,6 +1,11 @@
 ## -*- docker-image-name: "armbuild/scw-app-kolab:latest" -*-
-FROM armbuild/scw-distrib-debian:jessie
-MAINTAINER Scaleway <kolja.dummann@logv.ws> (@dumdidum)
+FROM scaleway/debian:amd64-jessie
+# following 'FROM' lines are used dynamically thanks do the image-builder
+# which dynamically update the Dockerfile if needed.
+#FROM scaleway/debian:armhf-jessie	# arch=armv7l
+#FROM scaleway/debian:arm64-jessie	# arch=arm64
+#FROM scaleway/debian:i386-jessie		# arch=i386
+#FROM scaleway/debian:mips-jessie		# arch=mips
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter

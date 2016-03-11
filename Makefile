@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	dumdidum/image-app-tor
 NAME =			scw-app-tor
-VERSION =		0.0.3
-VERSION_ALIASES =	0.0.3 latest
+VERSION =		0.1.0
+VERSION_ALIASES =	0.1.0 latest
 TITLE =			Tor Image
 DESCRIPTION =		A none exit Tor relay
 SOURCE_URL =		https://github.com/coolya/image-app-tor
