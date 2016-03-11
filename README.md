@@ -9,7 +9,7 @@ This image is built using [Image Tools](https://github.com/scaleway/image-tools)
 
 ---
 
-**This image is meant to be used on a C1 server.**
+**This image is meant to be used on a C1 & C2 server.**
 
 We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
 
@@ -20,6 +20,10 @@ We use the Docker's building system and convert it at the end to a disk image th
 
 ## Changelog
 
+
+### 0.1.0 (2016-03-11)
+
+* use new build system to make it ready for X64
 
 ### 0.0.3 (2015-06-03)
 
