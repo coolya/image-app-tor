@@ -4,7 +4,7 @@
 
 Scripts to build Tor relay image on Scaleway
 
-This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on  [Debian Jessie](https://github.com/scaleway/image-debian) image. This is not offically available yet. In order to use it you have to build it manually before build this image.
+This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on  [Debian Jessie](https://github.com/scaleway/image-debian) image.
 
 
 ---
@@ -33,7 +33,7 @@ This initial version contains:
 
 ## Install
 
-Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
+Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create-an-image-with-docker/))
 
     $ make install
 
