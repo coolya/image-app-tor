@@ -1,0 +1,15 @@
+.overlays
+tmp-*/
+docker-rules.mk
+*.built
+*.swp
+*~
+.*~
+*#
+.#*
+source.tar.gz
+source.tar.xz
+sd*.raw*
+rootfs*
+*/*.tar
+*/*.built
