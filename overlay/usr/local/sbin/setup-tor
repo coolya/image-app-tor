@@ -1,7 +1,7 @@
 #!/bin/sh
 
-NAME=$(oc-metadata --cached | grep HOSTNAME | cut -d= -f2)
-IP=$(oc-metadata --cached | grep PUBLIC_IP_ADDRESS | cut -d= -f2)
+NAME=$(scw-metadata --cached HOSTNAME)
+IP=$(scw-metadata --cached PUBLIC_IP_ADDRESS)
 PATH_TO_TEMPLATE="/etc/tor/torrc.template"
 TORRC_PATH="/etc/tor/torrc"
 NAME=$(echo $NAME | sed -e "s/[^a-zA-Z0-9]//g")
