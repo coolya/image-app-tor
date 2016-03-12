@@ -22,14 +22,11 @@ RUN echo "deb http://deb.torproject.org/torproject.org jessie main" > /etc/apt/s
  && apt-get --force-yes install -y -q tor                                                                    \
  && apt-get clean
 
-
-# Enable tor service
-RUN systemctl enable setup-tor.service
-
-
 # Patch rootfs
 ADD ./overlay/ /
 
+# Enable tor service
+RUN systemctl enable setup-tor.service
 
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/scw-builder-leave
