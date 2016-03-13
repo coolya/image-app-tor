@@ -1,6 +1,6 @@
 #  Tor Relay image on Scaleway
 
-[![Build Status](https://travis-ci.org/coolya/image-app-tor.svg?branch=master)](https://travis-ci.org/coolya/image-app-tor)
+[![Build Status](https://travis-ci.org/scaleway-community/scaleway-tor.svg?branch=master)](https://travis-ci.org/scaleway-community/scaleway-tor)
 
 Scripts to build Tor relay image on Scaleway
 
