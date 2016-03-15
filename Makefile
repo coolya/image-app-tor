@@ -4,7 +4,7 @@ VERSION_ALIASES =	0.2.0
 TITLE =			Tor Image
 DESCRIPTION =		A none exit Tor relay
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-tor
-IMAGE_DEFAULT_ARCH =	x86_64
+DEFAULT_IMAGE_ARCH =	x86_64
 
 
 IMAGE_VOLUME_SIZE =	50G
